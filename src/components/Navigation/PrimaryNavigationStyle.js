@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   @media screen and (min-width: 320px) {
     background-color: #222;
     padding: 0.35em 1.25em;
+    min-height: 60px;
 
     ${UL} {
       margin-top: 40px;
