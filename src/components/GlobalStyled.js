@@ -17,6 +17,12 @@ export const GlobalStyle = props => (
         main {
           margin-top: 60px;
           position: absolute;
+          padding: 20px;
+          line-height: 20px;
+          font-size: 1em;
+        }
+        main p {
+          margin: 10px 0px;
         }
       }
       @media screen and (min-width: 900px) {
