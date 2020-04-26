@@ -8,6 +8,8 @@ export const Nav = styled.nav`
     background-color: #222;
     padding: 0.35em 1.25em;
     min-height: 60px;
+    position: absolute;
+    width: 100%;
 
     ${UL} {
       margin-top: 40px;

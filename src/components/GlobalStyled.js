@@ -13,6 +13,12 @@ export const GlobalStyle = props => (
       body {
         font-family: Helvetica, 'sans-serif';
       }
+      @media screen and (min-width: 320px) {
+        main {
+          margin-top: 60px;
+          position: absolute;
+        }
+      }
       @media screen and (min-width: 900px) {
         font-size: 18px;
       }

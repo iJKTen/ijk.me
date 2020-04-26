@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <PrimaryNavigation />
-      <Home />
+      <main>
+        <Home />
+      </main>
     </div>
   );
 }

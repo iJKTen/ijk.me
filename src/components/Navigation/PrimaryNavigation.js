@@ -6,25 +6,23 @@ import { jsx } from '@emotion/core'
 
 const PrimaryNavigation = (props) => {
 
-  const [toggleState, setToggleState] = useState({open: false});
+  const [toggleState, setToggleState] = useState({ open: false });
 
   return (
-    <div>
-      <Nav>
-        <NavToggle 
-          navOpen={toggleState.open} 
-          onClick={() => setToggleState({open: !toggleState.open})} />
-        <UL
-          css={{
-            display: toggleState.open ? 'block' : 'none'
-          }}
-        >
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/resume">Resume</a></li>
-        </UL>
-      </Nav>
-    </div>
+    <Nav>
+      <NavToggle
+        navOpen={toggleState.open}
+        onClick={() => setToggleState({ open: !toggleState.open })} />
+      <UL
+        css={{
+          display: toggleState.open ? 'block' : 'none'
+        }}
+      >
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </UL>
+    </Nav>
   )
 }
 
