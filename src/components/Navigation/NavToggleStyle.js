@@ -5,10 +5,6 @@ export const Toggle = styled.span`
   @media screen and (min-width: 320px) {
     transform: rotate(0deg);
     transition: .5s ease-in-out;
-    // display: flex;
-    // justify-content: flex-end;
-    // flex-wrap: wrap;
-    // flex-direction: column;
     margin-top: 15px;
     float: right;
 
