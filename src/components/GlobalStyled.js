@@ -10,16 +10,26 @@ export const GlobalStyle = props => (
         padding: 0px;
         margin: 0px;
       }
+      html {
+        height: 100%;
+      }
       body {
         font-family: Helvetica, 'sans-serif';
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      footer {
+        flex-shrink: 0;
       }
       @media screen and (min-width: 320px) {
         main {
-          margin-top: 60px;
-          position: absolute;
-          padding: 20px;
-          line-height: 20px;
-          font-size: 1em;
+          padding: 80px 20px 20px 20px;
+          line-height: 28px;
+          font-size: 1.125em;
         }
         main p {
           margin: 10px 0px;

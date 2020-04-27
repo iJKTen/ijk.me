@@ -21,6 +21,8 @@ const PrimaryNavigation = (props) => {
         <li><a href="/">Home</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/resume">Resume</a></li>
+        <li><a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
+        <li><a href="//github.com/ijkten" target="_blank" rel="noopener noreferrer nofollow">GitHub</a></li>
       </UL>
     </Nav>
   )

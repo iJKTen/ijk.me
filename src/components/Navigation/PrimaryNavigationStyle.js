@@ -10,6 +10,7 @@ export const Nav = styled.nav`
     min-height: 60px;
     position: absolute;
     width: 100%;
+    z-index: 2;
 
     ${UL} {
       margin-top: 40px;

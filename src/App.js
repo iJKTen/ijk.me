@@ -1,7 +1,11 @@
 import React from 'react';
 import { GlobalStyle } from './components/GlobalStyled';
+import { Router } from '@reach/router';
 import PrimaryNavigation from './components/Navigation/PrimaryNavigation';
 import Home from './screens/Home/Home';
+import Footer from './components/Footer/Footer';
+import Project from './components/Project/Project';
+import Resume from './components/Resume/Resume';
 
 function App() {
   return (
@@ -9,8 +13,13 @@ function App() {
       <GlobalStyle />
       <PrimaryNavigation />
       <main>
-        <Home />
+        <Router>
+          <Home path="/" />
+          <Project path="projects" />
+          <Resume path="resume" />
+        </Router>
       </main>
+      <Footer />
     </div>
   );
 }
