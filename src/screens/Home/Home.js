@@ -58,6 +58,8 @@ const Home = (props)=> {
           <p>I started a programming blog documentaing my ongoing programming journey.</p>
           <h3>Meetup</h3>
           <p>I co-organize a meetup called Coding Literacy focused on teaching skills required to become a better programmer.</p>
+          <h3>Certifications</h3>
+          <p>As of March 25 2020 I am an <a href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557" target="_blank" rel="noopener noreferrer nofollow">AWS certified Cloud Practitioner</a></p>
         </p>
       </article>
     </section>
