@@ -4,8 +4,8 @@ import { Router } from '@reach/router';
 import PrimaryNavigation from './components/Navigation/PrimaryNavigation';
 import Home from './screens/Home/Home';
 import Footer from './components/Footer/Footer';
-import Project from './components/Project/Project';
-import Resume from './components/Resume/Resume';
+import Project from './screens/Projects/Project';
+import Resume from './screens/Resume/Resume';
 
 function App() {
   return (
