@@ -18,12 +18,16 @@ export const GlobalStyle = props => (
         height: 100%;
         display: flex;
         flex-direction: column;
+        background-color: #ebebeb;
       }
       main {
         flex: 1 0 auto;
       }
       footer {
         flex-shrink: 0;
+      }
+      h1, h2, h3, h4 {
+        color: #ff6700;
       }
       @media screen and (min-width: 320px) {
         main {
@@ -36,11 +40,23 @@ export const GlobalStyle = props => (
         }
       }
       @media screen and (min-width: 900px) {
-        font-size: 18px;
+        body {
+          font-size: 18px;
+        }
       }
         
       @media screen and (min-width: 1200px) {
-        font-size: 20px;
+        body {
+          font-size: 20px;
+          line-height: 32px;
+        }
+        body main {
+          width: 1100px;
+          margin: 0px auto;
+        }
+        main p {
+          line-height: 32px;
+        }
       }
     `}
   />

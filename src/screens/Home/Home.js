@@ -34,6 +34,10 @@ const Home = (props)=> {
           I have over 3 years in building NodeJS web services in the Hapi framework and I have been building NOSQL databases
           on AWS DynamoDB.
         </p>
+        <h2>Programming Languages</h2>
+        <p>
+          I have been programming in C#... mention dotnet core, JavaScript Ruby, Ruby on Rails some Python experience
+        </p>
         <h2>SharePoint Experience</h2>
         <p>
           I have been involved with SharePoint since SharePoint 2003 creating SharePoint sites, custom page
@@ -55,9 +59,9 @@ const Home = (props)=> {
           <h3>Punions</h3>
           <p>I am currently working on a multi-player online game called Punions written in NodeJS, ReactJS, and AWS DynamoDB.</p>
           <h3>Personal Blog</h3>
-          <p>I started a programming blog documentaing my ongoing programming journey.</p>
+          <p>I started a programming <a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">blog</a> documentaing my ongoing programming journey.</p>
           <h3>Meetup</h3>
-          <p>I co-organize a meetup called Coding Literacy focused on teaching skills required to become a better programmer.</p>
+          <p>I co-organize a meetup called <a href="//www.meetup.com/Coding-Literacy/" target="_blank" rel="noopener noreferrer nofollow">Coding Literacy</a> focused on teaching skills required to become a better programmer.</p>
           <h3>Certifications</h3>
           <p>As of March 25 2020 I am an <a href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557" target="_blank" rel="noopener noreferrer nofollow">AWS certified Cloud Practitioner</a></p>
         </p>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled/macro";
 
 const FooterStyled = styled.footer`
-  background-color: #222;
+  background-color: #0d2c54;
   color: white;
   padding: 20px;
   text-align: center;

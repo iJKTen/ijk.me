@@ -16,7 +16,7 @@ export const Toggle = styled.span`
       width: 32px;
       height: 4px;
       margin-bottom: 5px;
-      background: #cdcdcd;
+      background: white;
       border-radius: 3px;
       z-index: 1;
       position: absolute;
