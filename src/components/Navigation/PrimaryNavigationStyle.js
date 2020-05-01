@@ -1,7 +1,8 @@
 import styled from "@emotion/styled/macro";
 
 export const UL = styled.ul`
-  list-style: none
+  list-style: none;
+  display: ${props => props.navOpen ? 'block' : 'none'};
 `
 export const Nav = styled.nav`
   @media screen and (min-width: 320px) {
@@ -14,7 +15,6 @@ export const Nav = styled.nav`
 
     ${UL} {
       margin-top: 40px;
-      display: ${props => props.navOpen ? 'block' : 'none'};
     }
 
     ${UL} li {

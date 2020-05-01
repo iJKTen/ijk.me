@@ -1,16 +1,16 @@
 import React from 'react';
-import { Toggle } from './NavToggleStyle';
+import { BurgerMenu, BurgerMenuItem } from './NavToggleStyle';
 
 const NavToggle = (props) => {
   return (
-    <Toggle 
+    <BurgerMenu 
       onClick={props.onClick}
       {...props}
     >
-      <span className="nav-toggle"></span>
-      <span className="nav-toggle"></span>
-      <span className="nav-toggle"></span>
-    </Toggle>
+      <BurgerMenuItem />
+      <BurgerMenuItem />
+      <BurgerMenuItem />
+    </BurgerMenu>
   )
 }
 

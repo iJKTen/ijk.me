@@ -1,6 +1,11 @@
 import styled from "@emotion/styled/macro";
 
-export const Toggle = styled.span`
+export const BurgerMenuItem = styled.span`
+  transform-origin: left center;
+  left: -32px;
+`
+
+export const BurgerMenu = styled.div`
 
   @media screen and (min-width: 320px) {
     transform: rotate(0deg);
@@ -8,7 +13,7 @@ export const Toggle = styled.span`
     margin-top: 15px;
     float: right;
 
-    & > span {
+    & > ${BurgerMenuItem} {
       transform: rotate(0deg);
       transition: .25s ease-in-out;
       cursor: pointer;
@@ -22,25 +27,19 @@ export const Toggle = styled.span`
       position: absolute;
     }
 
-    & > span:nth-of-type(1) {
+    & > ${BurgerMenuItem}:nth-of-type(1) {
       top: ${props => props.navOpen ? '-2px' : '-4px'};
-      left: ${props => props.navOpen ? '-26px' : '-26px'};
-      transform-origin: left center;
       transform: ${props => props.navOpen ? 'rotate(45deg)' : 'rotate(0deg)'};
     }
 
-    & > span:nth-of-type(2) {
+    & > ${BurgerMenuItem}:nth-of-type(2) {
       top: 6px;
-      left: -26px;
-      transform-origin: left center;
       width: ${props => props.navOpen ? '0px' : '32px'};
       opacity: ${props => props.navOpen ? '0' : '1'};
     }
 
-    & > span:nth-of-type(3) {
+    & > ${BurgerMenuItem}:nth-of-type(3) {
       top: ${props => props.navOpen ? '20px' : '16px'};
-      left: ${props => props.navOpen ? '-26px' : '-26px'};
-      transform-origin: left center;
       transform: ${props => props.navOpen ? 'rotate(-45deg)' : 'rotate(0deg)'};
     }
   }
