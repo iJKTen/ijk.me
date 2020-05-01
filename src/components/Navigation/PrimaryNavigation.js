@@ -14,10 +14,7 @@ const PrimaryNavigation = (props) => {
       <NavToggle
         navOpen={toggleState.open}
         onClick={() => setToggleState({ open: !toggleState.open })} />
-      <UL
-        css={{
-          display: toggleState.open ? 'block' : 'none'
-        }}>
+      <UL navOpen={toggleState.open}>
         <li>
           <Link 
             to="/" 

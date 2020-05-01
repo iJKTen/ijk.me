@@ -14,6 +14,7 @@ export const Nav = styled.nav`
 
     ${UL} {
       margin-top: 40px;
+      display: ${props => props.navOpen ? 'block' : 'none'};
     }
 
     ${UL} li {
