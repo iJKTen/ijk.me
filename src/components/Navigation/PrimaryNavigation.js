@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Nav, UL } from './PrimaryNavigationStyle';
-import NavToggle from './NavToggle';
+import BurgerMenu from './BurgerMenu';
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
 import { Link } from '@reach/router';
@@ -11,7 +11,7 @@ const PrimaryNavigation = (props) => {
 
   return (
     <Nav>
-      <NavToggle
+      <BurgerMenu
         navOpen={toggleState.open}
         onClick={() => setToggleState({ open: !toggleState.open })} />
       <UL navOpen={toggleState.open}>

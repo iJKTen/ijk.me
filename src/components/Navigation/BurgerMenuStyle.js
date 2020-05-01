@@ -1,11 +1,11 @@
 import styled from "@emotion/styled/macro";
 
-export const BurgerMenuItem = styled.span`
+export const Span = styled.span`
   transform-origin: left center;
   left: -32px;
 `
 
-export const BurgerMenu = styled.div`
+export const Div = styled.div`
 
   @media screen and (min-width: 320px) {
     transform: rotate(0deg);
@@ -13,7 +13,7 @@ export const BurgerMenu = styled.div`
     margin-top: 15px;
     float: right;
 
-    & > ${BurgerMenuItem} {
+    & > ${Span} {
       transform: rotate(0deg);
       transition: .25s ease-in-out;
       cursor: pointer;
@@ -27,18 +27,18 @@ export const BurgerMenu = styled.div`
       position: absolute;
     }
 
-    & > ${BurgerMenuItem}:nth-of-type(1) {
+    & > ${Span}:nth-of-type(1) {
       top: ${props => props.navOpen ? '-2px' : '-4px'};
       transform: ${props => props.navOpen ? 'rotate(45deg)' : 'rotate(0deg)'};
     }
 
-    & > ${BurgerMenuItem}:nth-of-type(2) {
+    & > ${Span}:nth-of-type(2) {
       top: 6px;
       width: ${props => props.navOpen ? '0px' : '32px'};
       opacity: ${props => props.navOpen ? '0' : '1'};
     }
 
-    & > ${BurgerMenuItem}:nth-of-type(3) {
+    & > ${Span}:nth-of-type(3) {
       top: ${props => props.navOpen ? '20px' : '16px'};
       transform: ${props => props.navOpen ? 'rotate(-45deg)' : 'rotate(0deg)'};
     }
