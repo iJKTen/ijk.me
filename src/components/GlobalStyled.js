@@ -24,12 +24,6 @@ export const GlobalStyle = props => (
         position: fixed;
         width: 100%;
       }
-      main {
-        flex: 1 0 auto;
-      }
-      footer {
-        flex-shrink: 0;
-      }
       h1, h2, h3, h4 {
         color: #ff6700;
         line-height: 32px;
@@ -44,6 +38,7 @@ export const GlobalStyle = props => (
           padding: 80px 20px 20px 20px;
           line-height: 30px;
           font-size: 1.125em;
+          height: 100%;
         }
         main p {
           margin: 15px 0px;
