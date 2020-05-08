@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <PrimaryNavigation />
+      <header>
+        <PrimaryNavigation />
+      </header>
       <main>
         <Router>
           <Home path="/" />

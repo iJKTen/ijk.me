@@ -1,72 +1,102 @@
 import React from 'react';
+import styled from "@emotion/styled/macro";
+
+const Article = styled.article`
+`
+
+const P = styled.p`
+`
+
+const UL = styled.ul`
+`
+
+const Section = styled.section`
+  & > ${Article} {
+    margin-bottom: 35px;
+  }
+`
+
+const H3 = styled.h3`
+  margin: 20px 20px 10px 20px;
+  & + ${P} {
+    margin: 0px 20px 0px 20px;    
+  }
+  & + ${UL} {
+    margin-left: 40px;
+  }
+`
 
 const Home = (props)=> {
   return (
-    <section>
-      <article>
-        <h2>Introduction</h2>
-        <p>My name is Jai. I have Masters in Computer Science from University of Bridgeport.</p>
-        <p>At the University I was a TA helping setting up computers for Java classes and helping students with their coursework</p>
-        <p>I have been working as a software programmer for the past 15 years.</p>
+    <Section>
+      <Article>
+        <h2>Jai</h2>
+        <p>Just a person who loves full stack development!</p>
+      </Article>
+      <Article>
+        <h2>College</h2>
+        <p>I have a Masters in Computer Science from University of Bridgeport. At the University, I was a TA helping students with their Java course work.</p>
         <h2>Early Career</h2>
+        <p>I started as an intern and was hired full time and started with writing VBScripts permorning automations and creating websites in HTML &amp; CSS. </p>
         <p>
-          I started programming in Java, ASP.NET and at one point I had an MCD in ASP.NET.
+          I helped the team migrate the programming language of choice from VB.NET to C# and started
+          creating websites in ASP.NET, HTML, JavaScript, &amp; CSS with MS SQL Server as the backend.
         </p>
-        <p>
-          I was hired as a intern and then hired full time working on building websites in 
-          HTML, CSS, and JavaScript. Soon, I helped the team migrate from VB.NET to C# and started
-          creating websites in ASP.NET and working with MS SQL Server. I was involved in the entire stack
-          of building web applications including setting up websites in IIS.
-        </p>
+      </Article>
+      <Article>
         <h2>FrontEnd Development</h2>
+        <p>I have over 3 years of experience creating applications in React and Angular.js that run as an Outlook add-in. Currently, I am focused on creating front-end applications in React.</p>
         <p>
-          I started by creating an internal employee evalution rating system in ASP.NET with MS SQL Server as the backend.
+          Created an internal employee review system in ASP.NET, C#, with MS SQL Server as the database.
           I have over 15 years of experience in creating sites with HTML, CSS, bootstrap, JavaScript, jQuery running on ASP.NET and MS SQL Server. 
-          I have over 8 years of experience in creating web services in .NET and more recently I have been creating web services
-          in dotnet core.
-          I have over 4 years of creating frontend experiences in ReactJS.
-          I have build AngularJS applications that work as Outlook Add-ins.
         </p>
+      </Article>
+      <Article>
         <h2>Full Stack Experience</h2>
         <p>
-          At work I have been involved in working with MS SQL Server databases includes creating SSRS reports. 
-          I have over 8 years of experience in building web services in .NET and 4 years of experience in dotnet core Web API. 
-          I have over 3 years in building NodeJS web services in the Hapi framework and I have been building NOSQL databases
-          on AWS DynamoDB.
+          I have over 3 years in building NodeJS web services in the Hapi framework and I have been building NOSQL databases on AWS DynamoDB. Currently, I am focused on building web services in NodeJS.
         </p>
+        <p>
+          I have been involved in working with MS SQL Server databases including creating SSRS reports and
+          I have over 8 years of experience in building web services in .NET and 4 years of experience in dotnet core Web API. 
+        </p>
+      </Article>
+      <Article>
         <h2>Programming Languages</h2>
         <p>
-          I have been programming in C#... mention dotnet core, JavaScript Ruby, Ruby on Rails some Python experience
+          I have been programming in C#, JavaScript, Python, Ruby, Objective-C, &amp; have a working knowledge of TypeScript.
         </p>
+      </Article>
+      <Article>
         <h2>SharePoint Experience</h2>
         <p>
           I have been involved with SharePoint since SharePoint 2003 creating SharePoint sites, custom page
-          layouts, custom web parts, and solutions. <br/>
-          I created a middle layer which would connect a web parts with SharePonts lists so we could reuse
-          the middle layer across different projects. <br/>
-          I was involved in creating custom forms using InfoPath forms and business workflows running on 
-          SharePoint workflow. <br />
-          I have over 8 years of experience wth Nintex Forms and nintex workflows running on SharePoint 
-          on-premise and on cloud. <br/>
-          Written 
+          layouts, custom web parts, and solutions.
         </p>
+        <p>
+          I have over 8 years of experience wth Nintex Forms and nintex workflows running on SharePoint 
+          on premise and on cloud &amp; 2 years of experience in creating SharePoint sites with Powell.
+        </p>
+      </Article>
+      <Article>
         <h2>Personal Work</h2>
         <p>
-          In my own time I have started an iOS programming blog but had to shut it down because of burn out.<br />
-          I with writing applications in Django and then started using Ruby on Rails.<br/>
-          <h3>Trivial</h3>
-          <p>I created an MVP trivia app which could be used by restaurnts and bars to host trivia.</p>
-          <h3>Punions</h3>
-          <p>I am currently working on a multi-player online game called Punions written in NodeJS, ReactJS, and AWS DynamoDB.</p>
-          <h3>Personal Blog</h3>
-          <p>I started a programming <a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">blog</a> documentaing my ongoing programming journey.</p>
-          <h3>Meetup</h3>
-          <p>I co-organize a meetup called <a href="//www.meetup.com/Coding-Literacy/" target="_blank" rel="noopener noreferrer nofollow">Coding Literacy</a> focused on teaching skills required to become a better programmer.</p>
-          <h3>Certifications</h3>
-          <p>As of March 25 2020 I am an <a href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557" target="_blank" rel="noopener noreferrer nofollow">AWS certified Cloud Practitioner</a></p>
-        </p>
-      </article>
-    </section>
+          In my personal time, I like to build applications which helps me to keep up with the ever changing technical landscape. Here are some of the applications I have completed.</p>
+          <H3>Punions</H3>
+          <P>I am currently working on a multi-player online game called Punions written in NodeJS, ReactJS, &amp; AWS DynamoDB.</P>
+          <H3>Trivial</H3>
+          <P>I created an MVP <a href='https://github.com/iJKTen/trivialfun' target='_blank' rel="noopener noreferrer nofollow">trivia</a> app which could be used by restaurants and bars to host trivia games.</P>
+          <H3>Personal Blog</H3>
+          <P>I started a programming <a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">blog</a> documentaing my on-going programming journey.</P>
+          <H3>Meetup</H3>
+          <P>I co-organize a meetup called <a href="//www.meetup.com/Coding-Literacy/" target="_blank" rel="noopener noreferrer nofollow">Coding Literacy</a> focused on teaching skills required to become a better programmer.</P>
+          <H3>Certifications</H3>
+          <UL>
+            <li>As of March 25 2020 I am an <a href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557" target="_blank" rel="noopener noreferrer nofollow">AWS certified Cloud Practitioner</a></li>
+            <li>At one point I had an MCD in asp.net (Exam 70-486)</li>
+          </UL> 
+      </Article>
+    </Section>
   )
 }
 

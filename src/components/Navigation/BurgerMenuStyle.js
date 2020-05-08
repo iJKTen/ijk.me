@@ -21,7 +21,7 @@ export const Div = styled.div`
       width: 32px;
       height: 4px;
       margin-bottom: 5px;
-      background: white;
+      background: red;
       border-radius: 3px;
       z-index: 1;
       position: absolute;
@@ -39,8 +39,12 @@ export const Div = styled.div`
     }
 
     & > ${Span}:nth-of-type(3) {
-      top: ${props => props.navOpen ? '20px' : '16px'};
+      top: ${props => props.navOpen ? '21px' : '16px'};
       transform: ${props => props.navOpen ? 'rotate(-45deg)' : 'rotate(0deg)'};
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `

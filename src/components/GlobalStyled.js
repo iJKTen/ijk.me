@@ -18,7 +18,11 @@ export const GlobalStyle = props => (
         height: 100%;
         display: flex;
         flex-direction: column;
-        background-color: #ebebeb;
+        background-color: white;
+      }
+      header {
+        position: fixed;
+        width: 100%;
       }
       main {
         flex: 1 0 auto;
@@ -28,15 +32,21 @@ export const GlobalStyle = props => (
       }
       h1, h2, h3, h4 {
         color: #ff6700;
+        line-height: 32px;
+        border-bottom: 1px solid #FFB7AA;
+        padding-bottom: 4px;
+      }
+      a, a:link, a:visited {
+        color: blue;
       }
       @media screen and (min-width: 320px) {
         main {
           padding: 80px 20px 20px 20px;
-          line-height: 28px;
+          line-height: 30px;
           font-size: 1.125em;
         }
         main p {
-          margin: 10px 0px;
+          margin: 15px 0px;
         }
       }
       @media screen and (min-width: 900px) {
@@ -51,7 +61,7 @@ export const GlobalStyle = props => (
           line-height: 32px;
         }
         body main {
-          width: 1100px;
+          width: 1000px;
           margin: 0px auto;
         }
         main p {

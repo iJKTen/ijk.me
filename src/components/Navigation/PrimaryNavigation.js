@@ -11,9 +11,12 @@ const PrimaryNavigation = (props) => {
 
   return (
     <Nav>
-      <BurgerMenu
-        navOpen={toggleState.open}
-        onClick={() => setToggleState({ open: !toggleState.open })} />
+      <div>
+        <div><Link to="/">JK</Link></div>
+        <BurgerMenu
+          navOpen={toggleState.open}
+          onClick={() => setToggleState({ open: !toggleState.open })} />
+      </div>
       <UL navOpen={toggleState.open}>
         <li>
           <Link 
