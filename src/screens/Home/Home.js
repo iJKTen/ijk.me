@@ -36,8 +36,10 @@ const Home = (props)=> {
       <Article>
         <h2>College</h2>
         <p>I have a Masters in Computer Science from University of Bridgeport. At the University, I was a TA helping students with their Java course work.</p>
+      </Article>
+      <Article>
         <h2>Early Career</h2>
-        <p>I started as an intern and was hired full time and started with writing VBScripts permorning automations and creating websites in HTML &amp; CSS. </p>
+        <p>I started as an intern and was hired full time and started with writing VBScripts performing automations and creating websites in HTML &amp; CSS. </p>
         <p>
           I helped the team migrate the programming language of choice from VB.NET to C# and started
           creating websites in ASP.NET, HTML, JavaScript, &amp; CSS with MS SQL Server as the backend.
@@ -47,14 +49,13 @@ const Home = (props)=> {
         <h2>FrontEnd Development</h2>
         <p>I have over 3 years of experience creating applications in React and Angular.js that run as an Outlook add-in. Currently, I am focused on creating front-end applications in React.</p>
         <p>
-          Created an internal employee review system in ASP.NET, C#, with MS SQL Server as the database.
           I have over 15 years of experience in creating sites with HTML, CSS, bootstrap, JavaScript, jQuery running on ASP.NET and MS SQL Server. 
         </p>
       </Article>
       <Article>
         <h2>Full Stack Experience</h2>
         <p>
-          I have over 3 years in building NodeJS web services in the Hapi framework and I have been building NOSQL databases on AWS DynamoDB. Currently, I am focused on building web services in NodeJS.
+          I have over 3 years in building NodeJS web services and I have been building NoSQL databases on AWS DynamoDB. I have experience in working with express and HapiJS.
         </p>
         <p>
           I have been involved in working with MS SQL Server databases including creating SSRS reports and
@@ -90,6 +91,8 @@ const Home = (props)=> {
           <P>I started a programming <a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">blog</a> documentaing my on-going programming journey.</P>
           <H3>Meetup</H3>
           <P>I co-organize a meetup called <a href="//www.meetup.com/Coding-Literacy/" target="_blank" rel="noopener noreferrer nofollow">Coding Literacy</a> focused on teaching skills required to become a better programmer.</P>
+          <H3>Other Work</H3>
+          <P>Find other projets I worked on in my <a href='//github.com/ijkten' target="_blank" rel="noopener noreferrer nofollow">GitHub</a></P>
           <H3>Certifications</H3>
           <UL>
             <li>As of March 25 2020 I am an <a href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557" target="_blank" rel="noopener noreferrer nofollow">AWS certified Cloud Practitioner</a></li>
