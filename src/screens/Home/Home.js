@@ -84,7 +84,7 @@ const Home = (props)=> {
         <p>
           In my personal time, I like to build applications which helps me to keep up with the ever changing technical landscape. Here are some of the applications I have completed.</p>
           <H3>Punions</H3>
-          <P>I am currently working on a multi-player online game called Punions written in NodeJS, ReactJS, &amp; AWS DynamoDB.</P>
+          <P>I am currently working on a multi-player online game called Punions written in NodeJS, ReactJS, &amp; AWS DynamoDB. Follow my progress on <a href='https://twitter.com/ijkji' target="_blank" rel="noopener noreferrer nofollow">twitter</a> as I work on this app #100DaysOfCode.</P>
           <H3>Trivial</H3>
           <P>I created an MVP <a href='https://github.com/iJKTen/trivialfun' target='_blank' rel="noopener noreferrer nofollow">trivia</a> app which could be used by restaurants and bars to host trivia games.</P>
           <H3>Personal Blog</H3>
