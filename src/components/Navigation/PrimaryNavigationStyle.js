@@ -54,7 +54,6 @@ export const Nav = styled.nav`
 
     ${UL} li a {
       color: blue;
-      // font-weight: bold;
       text-decoration: none;
     }
 
@@ -79,10 +78,6 @@ export const Nav = styled.nav`
       border-bottom: 0px solid transparent;
       padding: 6px 4px 0px 4px !important;
       font-size: 20px !important;
-    }
-
-    ${UL} li a {
-      color: red;
     }
   }
 `
