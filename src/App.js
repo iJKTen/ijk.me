@@ -17,7 +17,6 @@ function App() {
       <main>
         <Router>
           <Home path="/" />
-          <Project path="projects" />
           <Resume path="resume" />
         </Router>
       </main>
