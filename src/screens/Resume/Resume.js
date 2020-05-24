@@ -119,7 +119,7 @@ const Resume = (props) => {
           <Company>
             <a target="_blank" rel="noopener noreferrer" href="https://ijk.ghost.io">Programming Blog</a>
           </Company>
-          <p>A blog where I write about programming topics which range from ReactJS, NodeJS, AWS, &amp; Azure</p>
+          <p>A blog where I write about programming topics which range from ReactJS, NodeJS, AWS, &amp; Azure.</p>
         </Experience>
         <Experience>
           <Company>
