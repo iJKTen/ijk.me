@@ -3,17 +3,30 @@ import styled from "@emotion/styled/macro";
 
 const ResumeStyled = styled.div`
   display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+  }
 `
 
 const Article = styled.article`
-  width: 60%;
+  @media screen and (min-width: 1000px) {
+    width: 65%;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 `
 
 const Aside = styled.aside`
-  margin-left: 20px;
-  width: 40%;
-  & > div {
-    margin-top: 0px;
+  @media screen and (min-width: 1000px) {
+    margin-left: 20px;
+    width: 35%;
+    & > div {
+      margin-top: 0px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
   }
 `
 
