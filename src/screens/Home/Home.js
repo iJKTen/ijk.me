@@ -16,9 +16,9 @@ const Social = styled.p`
 `
 
 const H1 = styled.h1`
-  // text-transform: uppercase;
   text-align: center;
   font-size: 48px;
+  line-height: 48px;
 `
 
 const Home = (props) => {
@@ -52,9 +52,9 @@ const Home = (props) => {
         I am a Full Stack Software Enginner who loves programming and is curious to learn and build new things. Some of the things I know and currently learning are below
       </P>
       <Skills></Skills>
-      <p>
+      <P>
         When not programming, I love to cook, read and listen to music. I love hiking in the summer &amp; winter but the first few minutes of winter hiking is rough.
-      </p>
+      </P>
     </article>
   )
 }
