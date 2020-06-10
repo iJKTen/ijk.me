@@ -3,7 +3,7 @@ import styled from "@emotion/styled/macro";
 import Skill from './Skill';
 
 const SkillsStyled = styled.section`
-  margin: 0px 40px;
+  margin: 0px 40px 0px 80px;
   display: flex;
   flex-flow: row wrap;
 `
