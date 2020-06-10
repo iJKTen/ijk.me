@@ -15,52 +15,70 @@ export const GlobalStyle = props => (
       }
       body {
         font-family: Helvetica, 'sans-serif';
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
       }
-      header {
-        position: fixed;
-        width: 100%;
+      a, a:visited {
+        text-decoration: none;
+        color: #0000FF;
       }
-      h1, h2, h3, h4 {
-        color: #ff6700;
-        line-height: 32px;
-        border-bottom: 1px solid #FFB7AA;
-        padding-bottom: 4px;
+      .violet, a.violet {
+        color: #EE82EE;
+        fill: #EE82EE;
       }
-      a, a:link, a:visited {
-        color: blue;
+      .indigo, a.indigo {
+        color: #4B0082;
+        fill: #4B0082;
+      }
+      .blue, a.blue {
+        color: #0000FF;
+        fill: #0000FF;
+      }
+      .green, a.green {
+        color: #008000;
+        fill: #008000;
+      }
+      .yellow, a.yellow {
+        color: #999900;
+        fill: #999900;
+      }
+      .orange, a.orange {
+        color: #FF4500;
+        fill: #FF4500;
+      }
+      .red, a.red {
+        color: #FF0000;
+        fill: #FF0000;
+      }
+      #root main {
+        padding: 20px;
+        line-height: 28px;
+        font-size: 18px;
       }
       @media screen and (min-width: 320px) {
-        main {
-          padding: 80px 20px 20px 20px;
-          line-height: 30px;
-          font-size: 1.125em;
-          height: 100%;
-        }
-        main p {
-          margin: 15px 0px;
+        svg {
+          width: 20px;
+          height: 20px;
         }
       }
-      @media screen and (min-width: 900px) {
-        body {
-          font-size: 18px;
+      @media screen and (min-width: 375px) {
+        svg {
+          width: 24px;
+          height: 24px;
         }
       }
-        
-      @media screen and (min-width: 1200px) {
-        body {
-          font-size: 20px;
-          line-height: 32px;
+      @media screen and (min-width: 414px) {
+        svg {
+          width: 32px;
+          height: 32px;
         }
-        body main {
-          width: 1000px;
+      }
+      @media screen and (min-width: 768px) {
+        #root main {
+          width: 768px;
           margin: 0px auto;
-        }
-        main p {
-          line-height: 32px;
+          background-color: #FFF;
+          min-height: 100vh;
+          padding-bottom: 40px;
+          position: relative;
         }
       }
     `}

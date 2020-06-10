@@ -7,11 +7,10 @@ export const Span = styled.span`
 
 export const Div = styled.div`
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 414px) {
     transform: rotate(0deg);
     transition: .5s ease-in-out;
-    margin-top: 15px;
-    float: right;
+    margin-top: 8px;
 
     & > ${Span} {
       transform: rotate(0deg);
@@ -21,7 +20,7 @@ export const Div = styled.div`
       width: 32px;
       height: 4px;
       margin-bottom: 5px;
-      background: red;
+      background: #000;
       border-radius: 3px;
       z-index: 1;
       position: absolute;
