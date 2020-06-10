@@ -1,13 +1,6 @@
 import React from 'react';
+import Skills from '../../components/Home/Skills'
 import styled from "@emotion/styled/macro";
-
-const Article = styled.article`
-  ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-  }
-`
 
 const P = styled.p`
   margin: 15px 0px;
@@ -28,34 +21,9 @@ const H1 = styled.h1`
   font-size: 48px;
 `
 
-const Section = styled.section`
-  & > ${Article} {
-    margin-bottom: 48px;
-  }
-`
-
-const Skills = styled.section`
-  margin: 0px 40px;
-  display: flex;
-  flex-flow: row wrap;
-
-  @media screen and (max-width: 414px) {
-    & > ${Article} {
-      margin-bottom: 48px;
-    }
-  }
-
-  @media screen and (min-width: 414px) {
-    & > ${Article} {
-      margin-bottom: 48px;
-      width: 50%;
-    }
-  }
-`
-
 const Home = (props) => {
   return (
-    <Section>
+    <article>
       <H1>Jai</H1>
       <Social>
         <a href="//github.com/iJKTen" className="violet" target="_blank" rel="noopener noreferrer nofollow">
@@ -83,63 +51,11 @@ const Home = (props) => {
       <P>
         I am a Full Stack Software Enginner who loves programming and is curious to learn and build new things. Some of the things I know and currently learning are below
       </P>
-      <Skills>
-        <Article>
-          <h3 className="violet">Languages</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>C#</li>
-            <li>Swift</li>
-            <li>Go</li>
-            <li>Rust</li>
-          </ul>
-        </Article>
-        <Article>
-          <h3 className="orange">Frameworks &amp; Libraries</h3>
-          <ul>
-            <li>ReactJS</li>
-            <li>Emotion</li>
-            <li>Ruby on Rails</li>
-            <li>.NET</li>
-            <li>.NET Core</li>
-            <li>Jest</li>
-          </ul>
-        </Article>
-        <Article>
-          <h3 className="indigo">Tools &amp; Environemnts</h3>
-          <ul>
-            <li>NodeJS</li>
-            <li>Git / GitHub</li>
-            <li>AWS</li>
-            <li>Azure</li>
-            <li>VS Code</li>
-          </ul>
-        </Article>
-        <Article>
-          <h3 className="red">Databases</h3>
-          <ul>
-            <li>PostgreSQL</li>
-            <li>MS SQL Server</li>
-            <li>DynamoDB</li>
-            <li>NoSQL</li>
-          </ul>
-        </Article>
-        <Article>
-          <h3 className="green">Awards</h3>
-          <ul>
-            <li>
-              <a target="_blank" rel="noopener noreferrer nofollow" href="//www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557">AWS Certified Cloud Practitioner</a>
-            </li>
-          </ul>
-        </Article>
-      </Skills>
+      <Skills></Skills>
       <p>
         When not programming, I love to cook, read and listen to music. I love hiking in the summer &amp; winter but the first few minutes of winter hiking is rough.
       </p>
-    </Section>
+    </article>
   )
 }
 
