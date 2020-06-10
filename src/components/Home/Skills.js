@@ -13,7 +13,7 @@ const Skills = () => {
     {
       className: 'violet',
       heading: 'Languages',
-      skills: ['JavaScript', 'TypeScript', 'Python', 'Ruby', 'C#', 'Swift', 'Go', 'Rust']
+      skills: ['JavaScript', 'TypeScript', 'Python', 'Ruby', 'C#', 'Swift']
     },
     {
       className: 'orange',
