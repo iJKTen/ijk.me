@@ -18,7 +18,7 @@ const Article = styled.article`
 const Skill = (props) => {
   return (
     <Article>
-      <h3 className={props.skill.className}>{props.skill.heading}</h3>
+      <h1 className={props.skill.className}>{props.skill.heading}</h1>
       <ul>
         {props.skill.skills.map((skill, index) => {
           if (typeof (skill) === 'string') {
