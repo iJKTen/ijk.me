@@ -57,12 +57,12 @@ const Resume = (props) => {
   return (
     <ResumeStyled>
       <Article>
-        <h2>Jai Kirdatt</h2>
+        <h1>Jai Kirdatt</h1>
         <Experience>
           <p>I have over 15 years of experience building full-stack applications in JavaScript, CSS, ASP.NET, IIS, &amp; SQL Server. For the past 4 years, I have created applications running on Ruby on Rails, NodeJS, ReactJS, PostgreSQL, &amp; DynamoDB.</p>
           <p>I am interested in mentoring junior developers &amp; building full-stack applications running on NodeJS, ReactJS, PostgeSQL, &amp; NOSQL.</p>
         </Experience>
-        <h3>Experience</h3>
+        <h1>Experience</h1>
         <Experience>
           <Company>Synergy Corporate Technologies LTD, </Company>
           <Location>Westport, CT</Location>
@@ -106,7 +106,7 @@ const Resume = (props) => {
           <Duration>2004</Duration>
           <p>Assisted with setting up Java classes and evaluating tests and assisting students with homework.</p>
         </Experience>
-        <h3>Education</h3>
+        <h1>Education</h1>
         <Experience>
           <Company>University of Bridgeport,</Company>
           <Location>Bridgeport, CT</Location>
@@ -114,7 +114,7 @@ const Resume = (props) => {
           <Duration>2003 - 2005</Duration>
           <p>Assisted with setting up Java classes and evaluating tests and assisting students with homework.</p>
         </Experience>
-        <h3>Projects</h3>
+        <h1>Projects</h1>
         <Experience>
           <Company>
             <a target="_blank" rel="noopener noreferrer" href="https://ijk.ghost.io">Programming Blog</a>
@@ -140,17 +140,17 @@ const Resume = (props) => {
       </Article>
       <Aside>
         <Experience>
-          <h3>SKILLS</h3>
+          <h1>SKILLS</h1>
           <p>Mentor junior programmers by coaching, code pairing, and code reviews.</p>
           <p>Able to manage and deliver projects under tight deadlines.</p>
           <p>Create quarterly coaching plans for Junior team members and evaluating new technologies.</p>
         </Experience>
         <Experience>
-          <h3>Technologies</h3>
+          <h1>Technologies</h1>
           <p>JavaScript, TypeScript, ReactJS, Styled Components, NodeJS, Jest, AngularJS, AWS Lambdas, AWS DynamoDB, .NET Core, C#, Objective-C, Ruby, Python, ASP.NET, VB.NET, PowerShell, HTML &amp; CSS</p>
         </Experience>
         <Experience>
-          <h3>AWARDS</h3>
+          <h1>AWARDS</h1>
           <p><a target="_blank" rel="noopener noreferrer" href="https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2020-03-25&ci=AWS01350557">AWS Certified Cloud Practitioner.</a></p>
         </Experience>
       </Aside>
