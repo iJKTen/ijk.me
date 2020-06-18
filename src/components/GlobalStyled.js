@@ -21,8 +21,8 @@ export const GlobalStyle = props => (
         color: #0000FF;
       }
       .violet, a.violet {
-        color: #EE82EE;
-        fill: #EE82EE;
+        color: #e53fe5;
+        fill: #e53fe5;
       }
       .indigo, a.indigo {
         color: #4B0082;
@@ -41,12 +41,12 @@ export const GlobalStyle = props => (
         fill: #999900;
       }
       .orange, a.orange {
-        color: #FF4500;
-        fill: #FF4500;
+        color: #ff6500;
+        fill: #ff6500;
       }
       .red, a.red {
-        color: #FF0000;
-        fill: #FF0000;
+        color: red;
+        fill: red;
       }
       #root main {
         padding: 20px;
