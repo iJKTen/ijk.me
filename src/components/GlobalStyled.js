@@ -48,6 +48,12 @@ export const GlobalStyle = props => (
         color: red;
         fill: red;
       }
+      p {
+        margin: 20px 0px;
+      }
+      img {
+        max-width: 100%;
+      }
       #root main {
         padding: 20px;
         line-height: 28px;

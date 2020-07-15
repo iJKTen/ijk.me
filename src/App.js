@@ -5,6 +5,7 @@ import PrimaryNavigation from './components/Navigation/PrimaryNavigation';
 import Home from './screens/Home/Home';
 import Footer from './components/Footer/Footer';
 import Resume from './screens/Resume/Resume';
+import Projects from './screens/Projects/Projects';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Router>
           <Home path="/" />
           <Resume path="resume" />
+          <Projects path='projects' />
         </Router>
       </main>
       <Footer />

@@ -120,6 +120,13 @@ const PrimaryNavigation = (props) => {
         <li><a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
         <li>
           <Link
+            to='projects'
+            onClick={() => setToggleState({ open: false })}>
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
             to="resume"
             onClick={() => setToggleState({ open: false })}>
             Resume
