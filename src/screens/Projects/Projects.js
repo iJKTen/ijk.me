@@ -45,6 +45,15 @@ const Projects = () => {
         <p>Trivial is a Ruby on Rails applications which will help you set up Trivia Games. The application uses PostgreSQL as the database.</p>
         <p>GitHub: <a href='//github.com/iJKTen/trivialfun' title='Trivial Fun' target='_blank' rel='noopener noreferrer nofollow'>https://github.com/iJKTen/trivialfun</a></p>
       </Project>
+      <Project>
+        <H2 className='green'>JaiK.me</H2>
+        <p>My portfolio site created in React. It uses @emotion/styled and @reach/router.</p>
+        <p>URL: <a href='//jaik.me' title="Jai's portfolio site" target='_blank' rel='noopener noreferrer nofollow'>https://JaiK.me</a></p>
+        <p>GitHub: <a href='//github.com/iJKTen/ijk.me' title="Jai's portfolio site Code" target='_blank' rel='noopener noreferrer nofollow'>https://github.com/iJKTen/ijk.me</a></p>
+        <p>
+          <img src='/projects/JaiK.png' alt="Jai's portfolio site" title="Jai's portfolio site" />
+        </p>
+      </Project>
     </article>
   )
 }
