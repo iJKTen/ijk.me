@@ -53,9 +53,16 @@ const Duration = styled.div`
   font-size: 14px;
 `
 
+const H1 = styled.h1`
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+`
+
 const Resume = (props) => {
   return (
     <ResumeStyled>
+      <H1>Resume</H1>
       <Article>
         <h1>Jai Kirdatt</h1>
         <Experience>

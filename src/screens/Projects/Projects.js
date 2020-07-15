@@ -9,8 +9,9 @@ const Project = styled.div`
 `
 
 const H1 = styled.h1`
+  text-align: center;
   font-size: 48px;
-  margin-bottom: 10px;
+  line-height: 48px;
 `
 
 const H2 = styled.h2`
