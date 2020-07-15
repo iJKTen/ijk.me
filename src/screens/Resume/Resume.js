@@ -57,6 +57,7 @@ const H1 = styled.h1`
   text-align: center;
   font-size: 48px;
   line-height: 48px;
+  margin-bottom: 20px;
 `
 
 const Resume = (props) => {
