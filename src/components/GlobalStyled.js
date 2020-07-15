@@ -82,8 +82,6 @@ export const GlobalStyle = props => (
           width: 768px;
           margin: 0px auto;
           background-color: #FFF;
-          min-height: 100vh;
-          padding-bottom: 40px;
           position: relative;
         }
       }

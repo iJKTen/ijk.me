@@ -5,7 +5,7 @@ const FooterStyled = styled.footer`
   text-align: center;
   font-size: 16px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
 
   section {
     text-align: center;
