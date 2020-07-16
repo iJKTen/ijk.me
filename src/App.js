@@ -1,26 +1,37 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { GlobalStyle } from './components/GlobalStyled';
-import { Router } from '@reach/router';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import PrimaryNavigation from './components/Navigation/PrimaryNavigation';
 import Home from './screens/Home/Home';
 import Footer from './components/Footer/Footer';
-import Resume from './screens/Resume/Resume';
-import Projects from './screens/Projects/Projects';
+
+const Resume = lazy(() => import('./screens/Resume/Resume'));
+const Projects = lazy(() => import('./screens/Projects/Projects'));
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <header>
-        <PrimaryNavigation />
-      </header>
-      <main>
-        <Router>
-          <Home path="/" />
-          <Resume path="resume" />
-          <Projects path='projects' />
-        </Router>
-      </main>
+      <Router>
+        <header>
+          <PrimaryNavigation />
+        </header>
+        <main>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route path="/resume" component={Resume} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </Suspense>
+        </main>
+      </Router>
       <Footer />
     </div>
   );

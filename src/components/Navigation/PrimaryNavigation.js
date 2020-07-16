@@ -2,7 +2,7 @@ import { useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { Link } from '@reach/router';
+import { Link } from 'react-router-dom';
 import styled from "@emotion/styled/macro";
 
 export const UL = styled.ul`
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
     color: blue;
   }
 
-  & > div:first-child > div:first-child {
+  & > div:first-of-type > div:first-of-type {
     color: #000;
     font-weight: bold;
     letter-spacing: 2px;
@@ -29,7 +29,7 @@ export const Nav = styled.nav`
     font-size: 28px;
   }
 
-  & > div:first-child > div:first-child a {
+  & > div:first-of-type > div:first-of-type a {
     color: #000;
   }
 
@@ -37,17 +37,17 @@ export const Nav = styled.nav`
     padding: 0.35em 1.25em;
     width: 100%;
 
-    & > div:first-child {
+    & > div:first-of-type {
       
     } 
 
-    & > div:first-child > div:first-child a,
-    & > div:first-child > div:first-child a:visited {
+    & > div:first-of-type > div:first-of-type a,
+    & > div:first-of-type > div:first-of-type a:visited {
       color: #000;
       text-decoration: none;
     }
 
-    & > div:first-child > div:first-child a:hover {
+    & > div:first-of-type > div:first-of-type a:hover {
       text-decoration: underline;
     }
 
@@ -79,7 +79,7 @@ export const Nav = styled.nav`
     }
   }
   @media screen and (min-width: 768px) {
-    & > div:first-child {
+    & > div:first-of-type {
     }
     ${UL} {
       display: flex;
@@ -93,14 +93,12 @@ export const Nav = styled.nav`
   }
 `
 
-
-
 const PrimaryNavigation = (props) => {
 
   const [toggleState, setToggleState] = useState({ open: false });
 
   return (
-    <Nav>
+    <Nav aria-label='Primary Navigation'>
       <div>
         <div><Link to="/">JK</Link></div>
       </div>
@@ -120,14 +118,14 @@ const PrimaryNavigation = (props) => {
         <li><a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
         <li>
           <Link
-            to='projects'
+            to='/projects'
             onClick={() => setToggleState({ open: false })}>
             Projects
           </Link>
         </li>
         <li>
           <Link
-            to="resume"
+            to="/resume"
             onClick={() => setToggleState({ open: false })}>
             Resume
           </Link>
