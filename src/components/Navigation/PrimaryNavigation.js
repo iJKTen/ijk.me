@@ -10,7 +10,7 @@ export const UL = styled.ul`
   display: ${props => props.navOpen ? 'block' : 'none'};
 `
 
-export const Nav = styled.nav`
+export const Header = styled.div`
   background-color: #F6F4F4;
   padding: 10px;
   display: flex;
@@ -98,40 +98,45 @@ const PrimaryNavigation = (props) => {
   const [toggleState, setToggleState] = useState({ open: false });
 
   return (
-    <Nav aria-label='Primary Navigation'>
+    <Header>
       <div>
-        <div><Link to="/">JK</Link></div>
+        <div><Link title='Home' to="/">JK</Link></div>
       </div>
       <div>
         <BurgerMenu
           navOpen={toggleState.open}
           onClick={() => setToggleState({ open: !toggleState.open })} />
       </div>
-      <UL navOpen={toggleState.open}>
-        <li>
-          <Link
-            to="/"
-            onClick={() => setToggleState({ open: false })}>
-            Home
+      <nav aria-label='Primary Navigation'>
+        <UL navOpen={toggleState.open}>
+          <li>
+            <Link
+              title='Home'
+              to="/"
+              onClick={() => setToggleState({ open: false })}>
+              Home
           </Link>
-        </li>
-        <li><a href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
-        <li>
-          <Link
-            to='/projects'
-            onClick={() => setToggleState({ open: false })}>
-            Projects
+          </li>
+          <li><a title='Blog' href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
+          <li>
+            <Link
+              title='projects'
+              to='/projects'
+              onClick={() => setToggleState({ open: false })}>
+              Projects
           </Link>
-        </li>
-        <li>
-          <Link
-            to="/resume"
-            onClick={() => setToggleState({ open: false })}>
-            Resume
+          </li>
+          <li>
+            <Link
+              title='Resume'
+              to="/resume"
+              onClick={() => setToggleState({ open: false })}>
+              Resume
           </Link>
-        </li>
-      </UL>
-    </Nav>
+          </li>
+        </UL>
+      </nav>
+    </Header>
   )
 }
 
