@@ -5,12 +5,12 @@ import { jsx } from '@emotion/core'
 import { Link } from 'react-router-dom';
 import styled from "@emotion/styled/macro";
 
-export const UL = styled.ul`
+const UL = styled.ul`
   list-style: none;
   display: ${props => props.navOpen ? 'block' : 'none'};
 `
 
-export const Header = styled.div`
+const Header = styled.nav`
   background-color: #F6F4F4;
   padding: 10px;
   display: flex;
@@ -107,35 +107,34 @@ const PrimaryNavigation = (props) => {
           navOpen={toggleState.open}
           onClick={() => setToggleState({ open: !toggleState.open })} />
       </div>
-      <nav aria-label='Primary Navigation'>
-        <UL navOpen={toggleState.open}>
-          <li>
-            <Link
-              title='Home'
-              to="/"
-              onClick={() => setToggleState({ open: false })}>
-              Home
+
+      <UL navOpen={toggleState.open}>
+        <li>
+          <Link
+            title='Home'
+            to="/"
+            onClick={() => setToggleState({ open: false })}>
+            Home
           </Link>
-          </li>
-          <li><a title='Blog' href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
-          <li>
-            <Link
-              title='projects'
-              to='/projects'
-              onClick={() => setToggleState({ open: false })}>
-              Projects
+        </li>
+        <li><a title='Blog' href="//ijk.ghost.io" target="_blank" rel="noopener noreferrer nofollow">Blog</a></li>
+        <li>
+          <Link
+            to='/projects'
+            onClick={() => setToggleState({ open: false })}>
+            Projects
           </Link>
-          </li>
-          <li>
-            <Link
-              title='Resume'
-              to="/resume"
-              onClick={() => setToggleState({ open: false })}>
-              Resume
+        </li>
+        <li>
+          <Link
+            title='Resume'
+            to="/resume"
+            onClick={() => setToggleState({ open: false })}>
+            Resume
           </Link>
-          </li>
-        </UL>
-      </nav>
+        </li>
+      </UL>
+
     </Header>
   )
 }

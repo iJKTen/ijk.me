@@ -10,8 +10,8 @@ describe('Projects', () => {
         <App />
       </MemoryRouter>
     );
-    screen.debug();
-    const link = screen.getByRole('link', { title: 'projects' });
+    // screen.debug();
+    const link = screen.getByRole('link', { name: /projects/i });
     // screen.debug(link);
   })
 })
