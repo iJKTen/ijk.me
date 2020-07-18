@@ -14,4 +14,5 @@ This repository uses GitHub actions to generate a lighthouse report
 This repository is automatically deployed to Netlify at https://JaiK.me
 
 ## To Do
-Clean up styles
++ Fix color contrast issues on home page.
++ Clean up styles
