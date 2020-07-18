@@ -17,7 +17,7 @@ const Skills = () => {
     },
     {
       className: 'orange',
-      heading: 'Frameworks & Languages',
+      heading: 'Frameworks & Libraries',
       skills: ['ReactJS', 'Emotion', 'Ruby on Rails', '.NET', '.NET Core', 'Jest']
     },
     {
