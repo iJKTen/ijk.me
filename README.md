@@ -13,5 +13,5 @@ This repository uses GitHub actions to generate a lighthouse report
 ## Deployment
 This repository is automatically deployed to Netlify at https://JaiK.me
 
-## ToDo
+## To Do
 Clean up styles
