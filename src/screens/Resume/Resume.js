@@ -77,6 +77,7 @@ const Resume = (props) => {
             <Location>Westport, CT</Location>
             <Position>Senior Software Engineer</Position>
             <Duration>AUG 2016 - Present</Duration>
+            <p>Architected serverless applications running on Azure App Service and Azure Functions in NodeJS interacting with SharePoint and it uses React on the client. Azure Functions are used to parse an email and populate a SharePoint list.</p>
             <p>Architect and lead developer writing web services in NodeJS accessing data from Azure via Microsoft GraphAPI running on Docker. Jest was used as the testing framework.</p>
             <p>Experience with design and implementation of DevOps and CI/CD tools on Azure.</p>
             <p>Mentoring a team of front-end and full-stack developers in Software design methodologies, software design patterns, and object oriented programming via code reviews and pair programming</p>
